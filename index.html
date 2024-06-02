@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data to JSON</title>
+</head>
+
+<style>
+    .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#jsonOutput {
+  margin-top: 20px;
+  white-space: pre-wrap;
+}
+
+</style>
+<body>
+  <div class="container">
+    <h1>Data to JSON Converter</h1>
+    <form id="dataForm">
+      <label for="brand">brand:</label>
+      <input type="text" id="brand" name="brand"><br>
+      <label for="name">name:</label>
+      <input type="text" id="name" name="name"><br>
+      <label for="status">status:</label>
+      <input type="text" id="status" name="status"><br>
+      <label for="amazonLink">amazonlink:</label>
+      <input type="text" id="amazonLink" name="amazonLink"><br>
+      <label for="launchDate">launchDate:</label>
+      <input type="text" id="launchDate" name="launchDate"><br>
+      <label for="imageSrc">imageSrc:</label>
+      <input type="text" id="imageSrc" name="imageSrc"><br>
+      <label for="photoCount">Photo Count:</label>
+      <input type="text" id="photoCount" name="photoCount"><br>
+      <label for="processor">processor:</label>
+      <input type="text" id="processor" name="processor"><br>
+      <label for="CPU">CPU:</label>
+      <input type="text" id="CPU" name="CPU"><br>
+      <label for="Architecture">Architecture:</label>
+      <input type="text" id="Architecture" name="Architecture"><br>
+      <label for="Graphics">Graphics:</label>
+      <input type="text" id="Graphics" name="Graphics"><br>
+      <label for="ram">ram:</label>
+      <input type="text" id="ram" name="ram"><br>
+      <label for="OS">os:</label>
+      <input type="text" id="OS" name="OS"><br>
+      <label for="display">display:</label>
+      <input type="text" id="display" name="display"><br>
+      <label for="displaytype">displaytype:</label>
+      <input type="text" id="displaytype" name="displaytype"><br>
+      <label for="Resolution">Resolution:</label>
+      <input type="text" id="Resolution" name="Resolution"><br>
+      <label for="pixeldencity">pixeldencity:</label>
+      <input type="text" id="pixeldencity" name="pixeldencity"><br>
+      <label for="rearcamera">rearcamera:</label>
+      <input type="text" id="rearcamera" name="rearcamera"><br>
+      <label for="rearcamerafeatures">rearcamerafeatures:</label>
+      <input type="text" id="rearcamerafeatures" name="rearcamerafeatures"><br>
+      <label for="rearcameravideo">rearcameravideo:</label>
+      <input type="text" id="rearcameravideo" name="rearcameravideo"><br>
+      <label for="frontcamera">frontcamera:</label>
+      <input type="text" id="frontcamera" name="frontcamera"><br>
+      <label for="frontcamerafeatures">frontcamerafeatures:</label>
+      <input type="text" id="frontcamerafeatures" name="frontcamerafeatures"><br>
+      <label for="frontcameravideo">frontcameravideo:</label>
+      <input type="text" id="frontcameravideo" name="frontcameravideo"><br>
+      <label for="battery">battery:</label>
+      <input type="text" id="battery" name="battery"><br>
+      <label for="charging">charging:</label>
+      <input type="text" id="charging" name="charging"><br>
+      <label for="width">width:</label>
+      <input type="text" id="width" name="width"><br>
+      <label for="height">height:</label>
+      <input type="text" id="height" name="height"><br>
+      <label for="weight">weight:</label>
+      <input type="text" id="weight" name="weight"><br>
+      <label for="color">color:</label>
+      <input type="text" id="color" name="color"><br>
+      <label for="build">build:</label>
+      <input type="text" id="build" name="build"><br>
+      <label for="loudspeaker">loudspeaker:</label>
+      <input type="text" id="loudspeaker" name="loudspeaker"><br>
+      <label for="wireheadphone">wireheadphone:</label>
+      <input type="text" id="wireheadphone" name="wireheadphone"><br>
+      <label for="batterytype">batterytype:</label>
+      <input type="text" id="batterytype" name="batterytype"><br>
+      <label for="storage">storage:</label>
+      <input type="text" id="storage" name="storage"><br>
+      <label for="expandablememory">expandablememory:</label>
+      <input type="text" id="expandablememory" name="expandablememory"><br>
+      <label for="cardslot">cardslot:</label>
+      <input type="text" id="cardslot" name="cardslot"><br>
+      <label for="simslot">simslot:</label>
+      <input type="text" id="simslot" name="simslot"><br>
+      <label for="simsize">simsize:</label>
+      <input type="text" id="simsize" name="simsize"><br>
+      <label for="networksupport">networksupport:</label>
+      <input type="text" id="networksupport" name="networksupport"><br>
+      <label for="volte">volte:</label>
+      <input type="text" id="volte" name="volte"><br>
+      <label for="wifi">wifi:</label>
+      <input type="text" id="wifi" name="wifi"><br>
+      <label for="bluetooth">bluetooth:</label>
+      <input type="text" id="bluetooth" name="bluetooth"><br>
+      <label for="GPS">GPS:</label>
+      <input type="text" id="GPS" name="GPS"><br>
+      <label for="NFC">NFC:</label>
+      <input type="text" id="NFC" name="NFC"><br>
+      <label for="USB">USB:</label>
+      <input type="text" id="USB" name="USB"><br>
+      <label for="sensors">sensors:</label>
+      <input type="text" id="sensors" name="sensors"><br>
+      <label for="performance">performance:</label>
+      <input type="text" id="performance" name="performance"><br>
+      <label for="displayperformance">displayperformance:</label>
+      <input type="text" id="displayperformance" name="displayperformance"><br>
+      <label for="loudspeakerperformance">loudspeakerperformance:</label>
+      <input type="text" id="loudspeakerperformance" name="loudspeakerperformance"><br>
+      <label for="batteryperformance">batteryperformance:</label>
+      <input type="text" id="batteryperformance" name="batteryperformance"><br>
+      <label for="price">price:</label>
+      <input type="text" id="price" name="price"><br>
+      <label for="id">id:</label>
+      <input type="text" id="id" name="id"><br>
+
+
+      <button id="addFormButton">Add Another Object</button>
+      <button type="button" onclick="convertToJson()">Convert to JSON</button>
+    </form>
+    <div id="jsonOutput"></div>
+    <button id="copyButton" onclick="copyJson()" style="display: none;">Copy JSON</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
