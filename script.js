@@ -12,17 +12,16 @@ function convertToJson() {
     const Graphics = document.getElementById('Graphics').value;
     const ram = document.getElementById('ram').value;
     const OS = document.getElementById('OS').value;
-    const Positioning = document.getElementById('Positioning').value;
     const display = document.getElementById('display').value;
     const displaytype = document.getElementById('displaytype').value;
     const Resolution = document.getElementById('Resolution').value;
-    const pixeldencity = document.getElementById('PixelDensity').value;
-    const rearcamera = document.getElementById('rearCamera').value;
-    const rearcamerafeatures = document.getElementById('rearCameraFeatures').value;
-    const rearcameravideo = document.getElementById('rearCameraVideo').value;
-    const frontcamera = document.getElementById('frontCamera').value;
-    const frontcameravideo = document.getElementById('FrontCameraVideo').value;
-    const frontcamerafeatures = document.getElementById('FrontCameraFeatures').value;
+    const pixeldencity = document.getElementById('pixeldencity').value;
+    const rearcamera = document.getElementById('rearcamera').value;
+    const rearcamerafeatures = document.getElementById('rearcamerafeatures').value;
+    const rearcameravideo = document.getElementById('rearcameravideo').value;
+    const frontcamera = document.getElementById('frontcamera').value;
+    const frontcameravideo = document.getElementById('frontcameravideo').value;
+    const frontcamerafeatures = document.getElementById('frontcamerafeatures').value;
     const battery = document.getElementById('battery').value;
     const charging = document.getElementById('charging').value;
     const width = document.getElementById('width').value;
@@ -30,26 +29,28 @@ function convertToJson() {
     const weight = document.getElementById('weight').value;
     const color = document.getElementById('color').value;
     const build = document.getElementById('build').value;
-    const loudspeaker = document.getElementById('Loudspeaker').value;
-    const wireheadphone = document.getElementById('WireHeadphoneJack').value;
+    const loudspeaker = document.getElementById('loudspeaker').value;
+    const wireheadphone = document.getElementById('wireheadphone').value;
     const batterytype = document.getElementById('batterytype').value;
     const storage = document.getElementById('storage').value;
-    const expandablememory = document.getElementById('ExpandableMemory').value;
-    const cardslot = document.getElementById('CardSlot').value;
-    const simslot = document.getElementById('SIMslot').value;
-    const simsize = document.getElementById('SIMsize').value;
-    const networksupport = document.getElementById('NetworkSupport').value;
-    const volte = document.getElementById('VOLTE').value;
+    const expandablememory = document.getElementById('expandablememory').value;
+    const cardslot = document.getElementById('cardslot').value;
+    const simslot = document.getElementById('simslot').value;
+    const simsize = document.getElementById('simsize').value;
+    const networksupport = document.getElementById('networksupport').value;
+    const volte = document.getElementById('volte').value;
     const wifi = document.getElementById('wifi').value;
-    const bluetooth = document.getElementById('Bluetooth').value;
+    const bluetooth = document.getElementById('bluetooth').value;
     const GPS = document.getElementById('GPS').value;
     const NFC = document.getElementById('NFC').value;
     const USB = document.getElementById('USB').value;
+    const Positioning = document.getElementById("Positioning").value;
+    const Protection = document.getElementById("Protection").value;
     const sensors = document.getElementById('sensors').value;
-    const performance = document.getElementById('Performance').value;
-    const displayperformance = document.getElementById('displayPerformance').value;
-    const loudspeakerperformance = document.getElementById('LoudspeakerPerformance').value;
-    const batteryperformance = document.getElementById('BatteryPerformance').value;
+    const performance = document.getElementById('performance').value;
+    const displayperformance = document.getElementById('displayperformance').value;
+    const loudspeakerperformance = document.getElementById('loudspeakerperformance').value;
+    const batteryperformance = document.getElementById('batteryperformance').value;
     const price = document.getElementById('price').value;
     const id = document.getElementById('id').value;
 
@@ -75,40 +76,41 @@ function convertToJson() {
         "display": display,
         "displaytype": displaytype,
         "Resolution": Resolution,
-        "pixeldencity": pixeldencity,
-        "rearcamera": rearcamera,
-        "rearcamerafeatures": rearcamerafeatures,
-        "rearcameravideo": rearcameravideo,
-        "frontcamera": frontcamera,
-        "frontcameravideo": frontcameravideo,
-        "frontcamerafeatures": frontcamerafeatures,
+        "Protection":Protection,
+        "PixelDensity": pixeldencity,
+        "rearCamera": rearcamera,
+        "rearCameraFeatures": rearcamerafeatures,
+        "rearCameraVideo": rearcameravideo,
+        "frontCamera": frontcamera,
+        "FrontCameraVideo": frontcameravideo,
+        "FrontCameraFeatures": frontcamerafeatures,
         "battery": battery,
         "charging": charging,
         "width": width,
         "height": height,
         "weight": weight,
-        "color": color,
+        "Colours": color,
         "build": build,
-        "loudspeaker": loudspeaker,
-        "Positioning":Positioning,
-        "wireheadphone": wireheadphone,
+        "Loudspeaker": loudspeaker,
+        "WireHeadphoneJack": wireheadphone,
         "batterytype": batterytype,
         "storage": storage,
-        "expandablememory": expandablememory,
-        "cardslot": cardslot,
-        "simslot": simslot,
-        "simsize": simsize,
-        "networksupport": networksupport,
-        "volte": volte,
+        "ExpandableMemory": expandablememory,
+        "CardSlot": cardslot,
+        "SIMslot": simslot,
+        "SIMsize": simsize,
+        "NetworkSupport": networksupport,
+        "VOLTE": volte,
         "wifi": wifi,
-        "bluetooth": bluetooth,
+        "Bluetooth": bluetooth,
         "GPS": GPS,
         "NFC": NFC,
         "USB": USB,
+        "Positioning":Positioning,
         "sensors": sensors,
-        "performance": performance,
-        "displayperformance": displayperformance,
-        "loudspeakerperformance": loudspeakerperformance,
+        "Performance": performance,
+        "displayPerformance": displayperformance,
+        "LoudspeakerPerformance": loudspeakerperformance,
         "BatteryPerformance": batteryperformance,
         "price": price,
         "id": id
