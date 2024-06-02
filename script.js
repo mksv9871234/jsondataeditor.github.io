@@ -12,6 +12,7 @@ function convertToJson() {
     const Graphics = document.getElementById('Graphics').value;
     const ram = document.getElementById('ram').value;
     const OS = document.getElementById('OS').value;
+    const Positioning = document.getElementById('Positioning').value;
     const display = document.getElementById('display').value;
     const displaytype = document.getElementById('displaytype').value;
     const Resolution = document.getElementById('Resolution').value;
@@ -89,6 +90,7 @@ function convertToJson() {
         "color": color,
         "build": build,
         "loudspeaker": loudspeaker,
+        "Positioning":Positioning,
         "wireheadphone": wireheadphone,
         "batterytype": batterytype,
         "storage": storage,
